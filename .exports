@@ -22,3 +22,10 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# golang
+PATH=$PATH:/usr/local/go/bin
+
+export GOPATH=$HOME/go
+
+PATH=$PATH:$GOPATH/bin

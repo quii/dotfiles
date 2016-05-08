@@ -1,3 +1,5 @@
+echo "ADDING FUNCTIONS"
+
 # Simple calculator
 function calc() {
 	local result="";
