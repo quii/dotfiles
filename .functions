@@ -273,3 +273,7 @@ function docker-stats-all(){
 function getTimestamp(){
 	date +%s
 }
+
+function resetWifi(){
+  sudo service network-manager restart
+}
