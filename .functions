@@ -275,3 +275,6 @@ function getTimestamp(){
 function resetWifi(){
   sudo service network-manager restart
 }
+
+# https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"
