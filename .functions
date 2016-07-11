@@ -268,6 +268,10 @@ function docker-stats-all(){
 	docker stats $(docker ps | awk '{if(NR>1) print $NF}')
 }
 
+function docker-volumedie(){
+  docker volume rm $(docker volume ls -qf dangling=true)
+}
+
 function getTimestamp(){
 	date +%s
 }
