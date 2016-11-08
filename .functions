@@ -282,3 +282,14 @@ function resetWifi(){
 
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
+
+function killTeamViewer(){
+sudo teamviewer --daemon stop 
+}
+
+function tableFlip(){
+  echo "(╯°□°）╯︵ ┻━┻)"
+}
+
+export TEMPDIR=/tmp
+alias go-coverage='go test -v -coverprofile=$TMPDIR/c.out && go tool cover -html=$TMPDIR/c.out'
